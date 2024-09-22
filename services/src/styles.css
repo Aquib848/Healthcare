@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 0;
+  }
+  body {
+    text-align: center;
+  }
+  .form1 input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.08);
+  }
+  .inputfield {
+    display: flex;
+    justify-content: left;
+    margin-left: 12%;
+  }
+  
+  .line1 {
+    width: 70%;
+    margin: 20px auto;
+    border: none;
+    border-top: 2px solid #007bff;
+    /* Optional styles */
+    height: 0; /* Ensure height is zero */
+  }
+  .form1 input::placeholder {
+    padding: 30px;
+    font-weight: 900;
+  }
+  .service_header {
+    margin: 20px;
+  }
+  .btn {
+    border-radius: 8px;
+    height: 60px;
+    background-color: #f4511e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 1px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 7;
+  }
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: none;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+    animation: pulse 0.5s infinite;
+  }
+  
+  .edit-button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .delete-button {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; /* Darker red */
+    animation: shake 0.5s ease;
+  }
+  
+  .delete-button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-5px);
+    }
+    40% {
+      transform: translateX(5px);
+    }
+    60% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .styled-form {
+    background-color: rgb(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .styled-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .styled-form input,
+  .styled-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  .styled-form input:focus,
+  .styled-form textarea:focus {
+    border-color: #007bff; /* Blue color on focus */
+    outline: none;
+  }
+  .styled-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .styled-form1 {
+    background-color: rgb(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .styled-form1 label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .styled-form1 input,
+  .styled-form1 textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  .styled-form1 input:focus,
+  .styled-form1 textarea:focus {
+    border-color: #007bff; /* Blue color on focus */
+    outline: none;
+  }
+  
+  .styled-form1 button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .styled-form1 button:hover {
+    background-color: #0056b3;
+  }
+  .styled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .styled-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .styled-list li:hover {
+    background-color: #e9ecef;
+  }
+  .desc {
+    padding: 5px;
+  }
+  .container {
+    background: linear-gradient(to right, blue, green, yellow 50%, orange);
+  }
+  .name {
+    text-decoration: underline;
+    padding-top: 6px;
+  }
